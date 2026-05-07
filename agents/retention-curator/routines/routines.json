@@ -1,0 +1,57 @@
+[
+  {
+    "id": "daily-segment-health",
+    "name": "Daily segment health",
+    "description": "Daily segment health",
+    "prompt": "Pull Klaviyo segment counts: Active (engaged last 30d), Engaged (opened last 90d), Lapsed (no open 90-180d), VIP (top 10% by LTV via Shopify). Append to outputs/segments.jsonl. Flag any >10% day-over-day swing.",
+    "schedule": "0 11 * * *",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "mon-vip-audit",
+    "name": "Monday VIP audit",
+    "description": "Monday VIP audit",
+    "prompt": "Identify top 10% by lifetime value via Shopify Composio. For any VIP with no order in 60 days, trigger personalised winback in Klaviyo (draft only — Email + SMS Operator approves and sends).",
+    "schedule": "0 13 * * 1",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "wed-churn-signals",
+    "name": "Wednesday churn signals",
+    "description": "Wednesday churn signals",
+    "prompt": "Find subscribers who opened email in last 30d but haven't ordered in 90d. Tag in Klaviyo as \"high-churn-risk\". Surface to Email + SMS Operator for next broadcast targeting.",
+    "schedule": "0 13 * * 3",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "fri-referral-check",
+    "name": "Friday referral programme check",
+    "description": "Friday referral programme check",
+    "prompt": "Once referral programme launches (TBC): pull last 7 days of referrals, conversion rate, top referrers. Until then, no-op (output ROUTINE_OK).",
+    "schedule": "0 13 * * 5",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "sun-cohort-report",
+    "name": "Sunday cohort report",
+    "description": "Sunday cohort report",
+    "prompt": "Compute Day 0 / 7 / 30 / 60 retention rates by acquisition channel for cohorts that hit those marks this week. Output to outputs/cohorts-{date}.md. Surface biggest mover in Director Mon review.",
+    "schedule": "0 17 * * 0",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

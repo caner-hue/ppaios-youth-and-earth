@@ -1,0 +1,46 @@
+[
+  {
+    "id": "mon-prospect-list",
+    "name": "Monday prospect list",
+    "description": "Monday prospect list",
+    "prompt": "Build 10 new wholesale prospects: independent salons, boutique pharmacies, premium haircare retailers. UK-only. Use /skill sales:account-research + /skill cloudflare-crawl. Save to PP CRM (pp-crm-psi.vercel.app/api/contacts) with utm_source=ppaios-reseller.",
+    "schedule": "0 9 * * 1",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "daily-outreach-send",
+    "name": "Daily outreach send (10/day)",
+    "description": "Daily outreach send (10/day)",
+    "prompt": "Send 10 outreach emails via Gmail Composio from out.purposefulprofits.co (when warm-up complete). Personalised per prospect using sales:draft-outreach. Run guardrail-check (≤50/day). Update PP CRM stage=Reached out.",
+    "schedule": "0 10 * * 1-5",
+    "enabled": false,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "daily-reply-triage",
+    "name": "Daily reply triage",
+    "description": "Daily reply triage",
+    "prompt": "Check Gmail for replies to outreach. Classify: positive (book demo), neutral (nudge in 5 days), negative (mark closed-lost). Update PP CRM. Draft follow-up replies.",
+    "schedule": "0 16 * * *",
+    "enabled": false,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "day28-warmup-complete",
+    "name": "Day 28 — domain warm-up complete",
+    "description": "Day 28 — domain warm-up complete",
+    "prompt": "One-time on day 28. Confirm out.purposefulprofits.co warmup is at 50/day capacity. Send a no-op email to caner@purposefulprofits.co to verify SPF/DKIM/DMARC. Then enable daily-outreach-send + daily-reply-triage routines.",
+    "schedule": "0 9 4 6 *",
+    "enabled": false,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

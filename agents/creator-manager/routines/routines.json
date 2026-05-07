@@ -1,0 +1,46 @@
+[
+  {
+    "id": "mon-outreach",
+    "name": "Monday creator outreach",
+    "description": "Monday creator outreach",
+    "prompt": "Source 5 new creators matching KIND2 ICP (haircare, postpartum, perimenopause). Use /skill sales:account-research. Pitch via Gmail Composio. Save to Notion Creator CRM with status=Pitched.",
+    "schedule": "0 10 * * 1",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "wed-brief-delivery",
+    "name": "Wednesday brief delivery",
+    "description": "Wednesday brief delivery",
+    "prompt": "For any creator with status=Briefed in Notion this week, send the brief via Gmail. Include voice guide, dos/don'ts, deadline.",
+    "schedule": "0 14 * * 3",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "fri-asset-chase",
+    "name": "Friday asset chase",
+    "description": "Friday asset chase",
+    "prompt": "Chase any creator with deliverable due >2 days ago and not received. Polite Gmail nudge. Update Notion status.",
+    "schedule": "0 12 * * 5",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "sun-creator-perf",
+    "name": "Sunday creator performance",
+    "description": "Sunday creator performance",
+    "prompt": "Pull engagement + CTR + Shopify orders by creator discount code (Composio). Update Notion Creator CRM with last 7 days metrics. Identify top + bottom performer.",
+    "schedule": "0 17 * * 0",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

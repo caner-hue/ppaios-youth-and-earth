@@ -1,0 +1,57 @@
+[
+  {
+    "id": "day30-first-campaign",
+    "name": "Day 30 — first campaign brief",
+    "description": "Day 30 — first campaign brief",
+    "prompt": "One-time on day 30 (~6 June). Read 30 days of email rev share, conversion baseline, top creatives from Creative library. Brief Meta cold + remarketing campaigns at £5/day total starting cap. Save spec to outputs/campaigns/day30-launch.md. iMessage Caner for approval before campaign-launch fires.",
+    "schedule": "0 10 6 6 *",
+    "enabled": false,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "daily-pacing",
+    "name": "Daily budget pacing",
+    "description": "Daily budget pacing",
+    "prompt": "Run budget-pacing skill. Pull spend across all paid channels. Compare to budgets.json caps. Pause overspend, surface underspend. Append outputs/spend-snapshots/.",
+    "schedule": "0 9,15 * * *",
+    "enabled": false,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "daily-launch-queue",
+    "name": "Daily campaign launch queue",
+    "description": "Daily campaign launch queue",
+    "prompt": "Check the queue in Creative library tagged for paid. Use campaign-launch skill to draft campaigns paused. iMessage Caner for unpause approval.",
+    "schedule": "0 10 * * *",
+    "enabled": false,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "wed-creative-test",
+    "name": "Wednesday creative test",
+    "description": "Wednesday creative test",
+    "prompt": "Use creative-test skill to spec a 3-variant creative test for the highest-spending campaign. Save plan to outputs/test-plans/.",
+    "schedule": "0 14 * * 3",
+    "enabled": false,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "sun-roas-cac",
+    "name": "Sunday ROAS + CAC report",
+    "description": "Sunday ROAS + CAC report",
+    "prompt": "Pull 7-day ROAS + blended CAC across Meta/TikTok/Google. Compare to kpi-targets.json. Recommend scale up / hold / scale down per channel. iMessage Caner.",
+    "schedule": "0 17 * * 0",
+    "enabled": false,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

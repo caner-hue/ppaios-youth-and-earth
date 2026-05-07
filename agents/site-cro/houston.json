@@ -1,0 +1,48 @@
+{
+  "id": "site-cro",
+  "name": "Site CRO Operator",
+  "description": "Shopify theme branches, A/B tests, page builds, conversion fixes. Live publishes always gated.",
+  "icon": "LayoutDashboard",
+  "category": "business",
+  "author": "Purposeful Profits",
+  "tags": [
+    "ppaios",
+    "shopify",
+    "cro",
+    "ab"
+  ],
+  "tabs": [
+    {
+      "id": "activity",
+      "label": "Activity",
+      "builtIn": "board",
+      "badge": "activity"
+    },
+    {
+      "id": "routines",
+      "label": "Routines",
+      "builtIn": "routines"
+    },
+    {
+      "id": "job-description",
+      "label": "Job Description",
+      "builtIn": "job-description"
+    },
+    {
+      "id": "files",
+      "label": "Files",
+      "builtIn": "files"
+    },
+    {
+      "id": "integrations",
+      "label": "Integrations",
+      "builtIn": "integrations"
+    }
+  ],
+  "defaultTab": "activity",
+  "version": "0.1.0",
+  "integrations": [
+    "gmail",
+    "notion"
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "weekly-cro-audit",
+    "name": "Weekly CRO audit",
+    "description": "Weekly CRO audit",
+    "prompt": "Pull top 3 landing pages by sessions via GA4. Run page-cro skill against each. Output prioritised improvement list to outputs/cro-audits/{date}.md. Pick 1 for next test.",
+    "schedule": "0 10 * * 2",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "weekly-ab-test-spec",
+    "name": "Weekly A/B test spec",
+    "description": "Weekly A/B test spec",
+    "prompt": "Based on Tuesday's CRO audit, write A/B test spec: hypothesis, variant, success metric, sample size, duration. Save to outputs/ab-tests/{date}.md. iMessage Caner for approval.",
+    "schedule": "0 11 * * 3",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "day7-baseline-screenshots",
+    "name": "Day 7 baseline screenshot pass",
+    "description": "Day 7 baseline screenshot pass",
+    "prompt": "One-time on day 7. Screenshot every key page (home, top 3 product, cart, checkout, thank-you) on desktop + mobile via Playwright. Save to outputs/baseline-screenshots/{date}/. This is the before reference.",
+    "schedule": "0 12 14 5 *",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "mon-ab-test-review",
+    "name": "Monday A/B test review",
+    "description": "Monday A/B test review",
+    "prompt": "For any A/B test running >7 days: pull GA4 + Shopify data, declare winner if statistical confidence >95%, otherwise extend or kill. Output decision log to outputs/ab-tests/decisions.jsonl.",
+    "schedule": "0 9 * * 1",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

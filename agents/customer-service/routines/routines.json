@@ -1,0 +1,35 @@
+[
+  {
+    "id": "daily-triage",
+    "name": "Daily inbox triage",
+    "description": "Daily inbox triage",
+    "prompt": "Run triage-incoming skill against Gmail unread, last 24h. For each message: classify, score, draft reply (drafts only first 30 days). Append outputs.json. iMessage Caner if any P1.",
+    "schedule": "30 7 * * *",
+    "enabled": false,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "daily-draft-queue-review",
+    "name": "Daily draft queue review",
+    "description": "Daily draft queue review",
+    "prompt": "Read the Gmail draft queue. Surface any draft sitting >24h without Caner sending. iMessage Caner if >5 drafts pending.",
+    "schedule": "0 17 * * *",
+    "enabled": false,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "weekly-kb-digest",
+    "name": "Weekly KB digest",
+    "description": "Weekly KB digest",
+    "prompt": "Cluster repeat questions from last 7 days of triaged tickets. For any cluster ≥3, propose a KB article to Content + SEO via Notion KB DB.",
+    "schedule": "0 18 * * 0",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

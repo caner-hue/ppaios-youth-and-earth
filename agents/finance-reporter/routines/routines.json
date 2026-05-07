@@ -1,0 +1,35 @@
+[
+  {
+    "id": "daily-revenue-snapshot",
+    "name": "Daily revenue snapshot",
+    "description": "Daily revenue snapshot",
+    "prompt": "Pull today's Shopify orders, refunds via Composio. Compute net revenue, AOV, return rate. Estimate contribution margin (revenue - paid spend - estimated COGS). Save to outputs/daily/{date}.json.",
+    "schedule": "30 17 * * *",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "sun-weekly-pnl",
+    "name": "Sunday weekly P&L",
+    "description": "Sunday weekly P&L",
+    "prompt": "Compile last 7 days: revenue, ad spend, blended CAC, contribution margin. Compare to last week + 4-week trailing. Output to outputs/weekly-pnl-{date}.md. Feeds Director Mon review.",
+    "schedule": "0 19 * * 0",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "monthly-close",
+    "name": "Monthly close",
+    "description": "Monthly close",
+    "prompt": "Last day of each month: monthly P&L. MRR progress check vs £15k target trajectory (0%/33%/66%/100% at days 0/30/60/90). Email Caner the report.",
+    "schedule": "0 18 28-31 * *",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

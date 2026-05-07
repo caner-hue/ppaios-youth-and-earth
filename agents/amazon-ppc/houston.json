@@ -1,0 +1,48 @@
+{
+  "id": "amazon-ppc",
+  "name": "Amazon PPC",
+  "description": "Sponsored Products/Brands/Display, search-term harvesting, bid management, ASIN-level reporting.",
+  "icon": "ShoppingCart",
+  "category": "business",
+  "author": "Purposeful Profits",
+  "tags": [
+    "ppaios",
+    "amazon",
+    "ppc",
+    "ads"
+  ],
+  "tabs": [
+    {
+      "id": "activity",
+      "label": "Activity",
+      "builtIn": "board",
+      "badge": "activity"
+    },
+    {
+      "id": "routines",
+      "label": "Routines",
+      "builtIn": "routines"
+    },
+    {
+      "id": "job-description",
+      "label": "Job Description",
+      "builtIn": "job-description"
+    },
+    {
+      "id": "files",
+      "label": "Files",
+      "builtIn": "files"
+    },
+    {
+      "id": "integrations",
+      "label": "Integrations",
+      "builtIn": "integrations"
+    }
+  ],
+  "defaultTab": "activity",
+  "version": "0.1.0",
+  "integrations": [
+    "gmail",
+    "notion"
+  ]
+}

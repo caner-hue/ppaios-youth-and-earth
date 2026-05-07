@@ -1,0 +1,57 @@
+[
+  {
+    "id": "daily-day14-trigger",
+    "name": "Daily day-14 review request trigger",
+    "description": "Daily day-14 review request trigger",
+    "prompt": "Pull yesterday's delivered orders via Shopify Composio. For each, check if a day-14 review request flow exists in Klaviyo. If not, schedule one. Track in outputs/review-requests.jsonl.",
+    "schedule": "0 16 * * *",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "daily-review-collect",
+    "name": "Daily review collection + classify",
+    "description": "Daily review collection + classify",
+    "prompt": "Pull last 24h of new reviews (Shopify reviews app + Trustpilot if wired). Classify: 5★ → tag for Creative + Reseller portfolio, 4-3★ → CS triage queue, 1-2★ → P1 escalate to Caner via iMessage.",
+    "schedule": "0 17 * * *",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "mon-review-of-week",
+    "name": "Monday review-of-the-week",
+    "description": "Monday review-of-the-week",
+    "prompt": "Pick the strongest 5★ review from the past 7 days (specificity, photo, story arc). Save to outputs/review-of-week.jsonl. Notify Creative Producer to turn into ad creative.",
+    "schedule": "0 11 * * 1",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "wed-review-replies",
+    "name": "Wednesday review reply queue",
+    "description": "Wednesday review reply queue",
+    "prompt": "Draft replies to any reviews left without a response in the past 14 days (drafts only first 30 days). Voice from tone-of-voice.md. Save to outputs/review-replies/.",
+    "schedule": "0 12 * * 3",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "sun-review-velocity",
+    "name": "Sunday review velocity report",
+    "description": "Sunday review velocity report",
+    "prompt": "Past 7 days: count of reviews collected, average rating, themes (using brand-voice-check + voc-ad-copy patterns). Identify any drop in velocity vs trailing 4 weeks. Output to outputs/review-velocity-{date}.md.",
+    "schedule": "0 17 * * 0",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

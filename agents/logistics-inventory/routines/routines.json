@@ -1,0 +1,35 @@
+[
+  {
+    "id": "daily-stock-check",
+    "name": "Daily stock check",
+    "description": "Daily stock check",
+    "prompt": "Pull every SKU inventory level via Shopify Composio. For any SKU below safety stock (default <30 units, P1 if <10), write to ../alerts.jsonl and draft a reorder PO to Caner via Gmail.",
+    "schedule": "30 9 * * *",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "mon-sendcloud-summary",
+    "name": "Monday Sendcloud daily ops summary",
+    "description": "Monday Sendcloud daily ops summary",
+    "prompt": "Pull last 7 days from Sendcloud (when wired). Shipped count, in transit, exceptions (lost, returned, failed delivery). Output to outputs/sendcloud-weekly-{date}.md.",
+    "schedule": "0 11 * * 1",
+    "enabled": false,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "wed-fulfillment-sla",
+    "name": "Wednesday fulfillment SLA audit",
+    "description": "Wednesday fulfillment SLA audit",
+    "prompt": "Find any orders with order_date > 48h ago and status=unfulfilled. Surface as P2 alert. Draft email to Sendcloud + 3PL contact.",
+    "schedule": "0 11 * * 3",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

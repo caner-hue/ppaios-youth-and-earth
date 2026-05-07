@@ -1,0 +1,24 @@
+[
+  {
+    "id": "day60-amazon-audit",
+    "name": "Day 60 — Amazon channel audit",
+    "description": "Day 60 — Amazon channel audit",
+    "prompt": "One-time on day 60. Audit current Amazon UK setup, Brand Registry, ad account access. Propose Phase 5 PPC plan if KIND2 has live ASINs.",
+    "schedule": "0 11 6 7 *",
+    "enabled": false,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "daily-search-term-harvest",
+    "name": "Daily search-term harvest",
+    "description": "Daily search-term harvest",
+    "prompt": "Pull yesterday's search-term report for KIND2 ASINs. Negative match losing terms. Promote winning terms to exact match.",
+    "schedule": "0 8 * * *",
+    "enabled": false,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

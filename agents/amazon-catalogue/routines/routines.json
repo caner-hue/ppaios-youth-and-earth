@@ -1,0 +1,24 @@
+[
+  {
+    "id": "day60-listing-audit",
+    "name": "Day 60 — listing audit",
+    "description": "Day 60 — listing audit",
+    "prompt": "One-time on day 60. Pull every KIND2 ASIN. Score each: title length, bullets, A+ content, image count, video, schema. Output prioritised improvement list.",
+    "schedule": "0 12 6 7 *",
+    "enabled": false,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "mon-review-monitor",
+    "name": "Monday review monitoring",
+    "description": "Monday review monitoring",
+    "prompt": "Pull last 7 days of Amazon reviews per ASIN. Flag <4★ for Customer Service triage. Surface top quote per ASIN to Creative library.",
+    "schedule": "0 11 * * 1",
+    "enabled": false,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

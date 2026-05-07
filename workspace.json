@@ -1,12 +1,23 @@
 {
   "name": "PPAIOS — Youth & Earth",
-  "description": "Youth & Earth brand workspace. Tier: sprint. Anti-ageing supplement DTC. Y&E_private-api-key.txt found in Drive root (move to ~/.dev-houston/.env on first connect).",
+  "description": "Youth & Earth brand workspace. Tier: sprint (full 17-agent roster — same skill surface as KIND2). Anti-ageing supplement DTC. Y&E_private-api-key.txt found in Drive root (move to ~/.dev-houston/.env on first connect).",
   "agents": [
     "director",
     "analytics",
+    "customer-service",
     "email-sms",
+    "site-cro",
     "content-seo",
     "creative",
-    "social-media"
+    "social-media",
+    "paid-ads",
+    "reseller-outreach",
+    "creator-manager",
+    "amazon-ppc",
+    "amazon-catalogue",
+    "finance-reporter",
+    "logistics-inventory",
+    "reviews-social-proof",
+    "retention-curator"
   ]
 }

@@ -1,0 +1,48 @@
+{
+  "id": "retention-curator",
+  "name": "Retention Curator",
+  "description": "Owns segment hygiene, VIP cultivation, churn signals, cohort retention. Feeds the Email + SMS Operator with the right targeting.",
+  "icon": "HeartHandshake",
+  "category": "business",
+  "author": "Purposeful Profits",
+  "tags": [
+    "ppaios",
+    "retention",
+    "crm",
+    "cohorts"
+  ],
+  "tabs": [
+    {
+      "id": "activity",
+      "label": "Activity",
+      "builtIn": "board",
+      "badge": "activity"
+    },
+    {
+      "id": "routines",
+      "label": "Routines",
+      "builtIn": "routines"
+    },
+    {
+      "id": "job-description",
+      "label": "Job Description",
+      "builtIn": "job-description"
+    },
+    {
+      "id": "files",
+      "label": "Files",
+      "builtIn": "files"
+    },
+    {
+      "id": "integrations",
+      "label": "Integrations",
+      "builtIn": "integrations"
+    }
+  ],
+  "defaultTab": "activity",
+  "version": "0.1.0",
+  "integrations": [
+    "gmail",
+    "notion"
+  ]
+}
