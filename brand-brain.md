@@ -18,23 +18,24 @@ TBC — Caner to confirm Shopify URL, Klaviyo account, ad platforms during onboa
 
 <!-- AUTO-SYNCED FROM ~/dev/ppaios-pp/references/client-roster.md — DO NOT EDIT BELOW THIS LINE; edit roster instead -->
 
-## 2. Youth & Earth
+## 2. Youth & Earth ✅
 
-- **Status:** active
-- **Tier:** sprint
-- **Started:** TBC (assets in Drive since at least early 2026)
-- **Window:** TBC
-- **Scope:** TBC. Drive contains `Y&E_private-api-key.txt` only. Caner to brief.
-- **Invoicing:**
-  - Fee: TBC
-  - Cadence: TBC (one-off vs monthly?)
-  - Last invoice: TBC
-  - Channel: Stripe / bank transfer / other?
-- **Stakeholders:** TBC
-- **Tools:** TBC
-- **Open questions:**
-  - Anti-ageing supplement DTC — confirm subcategory.
-  - What does the existing API key access (Klaviyo? Shopify? something else)?
-  - Is this a 30-day audit, an ongoing monthly, or a fixed sprint with end date?
+- **Status:** active ✅ (paid media currently running)
+- **Tier:** retainer + paid media management
+- **Started:** existing engagement (Notion page created 2026-04-13) — onboarded earlier
+- **Scope:** Paid media management (Meta primary). Status calls regular ("Youth & Earth x Growthcurve | Status Call" cadence)
+- **Invoicing:** Recurring; specific fee TBC ❓
+- **Stakeholders:**
+  - Client: Leyla, Matthew S
+  - Office: Huckletree West, Mediaworks, 191 Wood Lane, London W12 7FP
+  - Last invoice on file: **INV-2650, £3,250, due 28 Apr 2026** (gmail) ✅
+- **Tools:**
+  - Meta Ad Account: `10153865868170051` ✅ (per `crm://youth-and-earth` 2026-05-06)
+  - Y&E private API key file in Drive (`Y&E_private-api-key.txt`)
+- **Recent activity** (per `crm://`):
+  - 2026-05-06: Meta billed £1,550 for 2-6 May window
+  - Calendar event "Youth" 2026-05-06 12:45-15:00 ✅
+  - "Youth & Earth x Growthcurve | Status Call" 2026-05-05
+- **Links:** [`notion://Youth & Earth`](https://www.notion.so/34123a47bdd981ef850dca543a5a01e7)
 
 ---
