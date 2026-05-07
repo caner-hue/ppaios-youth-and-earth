@@ -1,0 +1,46 @@
+[
+  {
+    "id": "daily-schedule",
+    "name": "Daily 24h schedule",
+    "description": "Daily 24h schedule",
+    "prompt": "Pull next 24h of scheduled posts from Notion Content Calendar. Queue across IG/TikTok/X/LinkedIn. Run brand-voice-check on every post. Save the queue to outputs/queue/{date}.md.",
+    "schedule": "30 8 * * *",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "daily-community-mgmt",
+    "name": "Daily community management",
+    "description": "Daily community management",
+    "prompt": "Read past 24h of comments + DMs across IG/TikTok/X/LinkedIn (Playwright). Draft replies. Save to outputs/replies/{date}.md. Live reply requires Caner approval (Phase 1-3).",
+    "schedule": "0 18 * * *",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "sat-ugc-source",
+    "name": "Saturday UGC + creator source",
+    "description": "Saturday UGC + creator source",
+    "prompt": "Find 3 organic posts from KIND2 customers (search hashtags + tagged posts). Save to outputs/ugc-candidates/{week}.md. iMessage Caner for repost approval.",
+    "schedule": "0 11 * * 6",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "sun-week-review",
+    "name": "Sunday week-in-review post",
+    "description": "Sunday week-in-review post",
+    "prompt": "Compile a proof-led week-in-review post for LinkedIn (Caner) + IG (KIND2). Use linkedin-post + social-post skills. Save as drafts.",
+    "schedule": "0 19 * * 0",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

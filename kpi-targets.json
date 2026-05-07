@@ -1,0 +1,14 @@
+{
+  "brand": "youth-and-earth",
+  "tier": "sprint",
+  "targets": {
+    "sprint_outcome_value_gbp": {
+      "target": 5000,
+      "floor": 2000
+    },
+    "deliverable_completion_pct": {
+      "target": 100,
+      "floor": 80
+    }
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "day1-flow-audit",
+    "name": "Day 1 — Klaviyo flow audit",
+    "description": "Day 1 — Klaviyo flow audit",
+    "prompt": "One-time on day 1. Read every Klaviyo flow via Composio. Identify which of the 4 must-haves are missing or broken: Welcome series, Abandoned Cart, Post-Purchase, Winback. Propose drafts. Output to outputs/day1-flow-audit.md and iMessage Caner.",
+    "schedule": "0 11 7 5 *",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "daily-segment-hygiene",
+    "name": "Daily segment hygiene",
+    "description": "Daily segment hygiene",
+    "prompt": "Pull active / engaged / lapsed / VIP segment counts via Klaviyo. Append to outputs/segment-hygiene.jsonl. Flag any segment that swings >10% day-over-day.",
+    "schedule": "0 10 * * *",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "weekly-broadcast-plan",
+    "name": "Weekly broadcast plan",
+    "description": "Weekly broadcast plan",
+    "prompt": "Plan one campaign for the upcoming week. Theme from content calendar (Notion). Draft subject A/B/C variants. Run brand-voice-check. Save as Klaviyo draft. iMessage Caner the plan.",
+    "schedule": "0 10 * * 2",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "thu-broadcast-sendprep",
+    "name": "Thursday broadcast send-prep",
+    "description": "Thursday broadcast send-prep",
+    "prompt": "Final QA on Tuesday's drafted campaign. Recipient count check vs 5k Guardrail cap. Predict open + revenue per recipient based on last 5 sends. iMessage Caner SEND or HOLD recommendation.",
+    "schedule": "0 14 * * 4",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "fri-broadcast-recap",
+    "name": "Friday broadcast recap",
+    "description": "Friday broadcast recap",
+    "prompt": "For any campaign sent in last 24h: pull open rate, CTR, revenue, attributed orders. Compare to last 5 sends. Append to outputs/broadcasts.jsonl. Surface in Sunday weekly-flow-report.",
+    "schedule": "0 11 * * 5",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "mon-flow-performance",
+    "name": "Monday flow performance report",
+    "description": "Monday flow performance report",
+    "prompt": "Pull last 7 days per-flow metrics from Klaviyo: revenue, recipients, revenue/recipient. Identify the underperforming flow. Propose 1 optimisation per week (subject test, timing change, segment refinement). iMessage Caner.",
+    "schedule": "0 16 * * 1",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

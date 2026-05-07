@@ -1,0 +1,13 @@
+{
+  "brand": "youth-and-earth",
+  "auth_strategy": "composio_per_client",
+  "notes": "Each client uses their own Composio connection scoped to their accounts (not Caner's personal). Connect via Houston Integrations panel after import.",
+  "pending": [
+    "shopify",
+    "klaviyo",
+    "google-analytics",
+    "gmail (client-specific)",
+    "meta-ads (when applicable)"
+  ],
+  "kill_switch_path": "$HOME/.dev-houston/KILL_SWITCH"
+}

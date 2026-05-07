@@ -1,0 +1,46 @@
+[
+  {
+    "id": "tue-voc-mining",
+    "name": "Tuesday VOC mining",
+    "description": "Tuesday VOC mining",
+    "prompt": "Read last 7 days of customer reviews + refunds + CS messages. Use /skill voc-ad-copy to mine 3 ad-copy hooks. Save to outputs/hooks/{week}.md.",
+    "schedule": "0 9 * * 2",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "wed-asset-batch",
+    "name": "Wednesday asset batch",
+    "description": "Wednesday asset batch",
+    "prompt": "Produce 5 creative assets via /skill higgsfield-generate. Pick 3 hooks from Tuesday + 2 evergreen brand assets. Save to outputs/library/{date}/. Tag each by audience + funnel stage.",
+    "schedule": "0 10 * * 3",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "thu-scroll-stop",
+    "name": "Thursday scroll-stop variants",
+    "description": "Thursday scroll-stop variants",
+    "prompt": "Pick top 2 hooks from this week. Use /skill scroll-stop-prompter to generate scroll-stopping video prompts. Save prompts + reference frames to outputs/scroll-stops/{week}/.",
+    "schedule": "0 11 * * 4",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "fri-creative-briefing",
+    "name": "Friday creative briefing",
+    "description": "Friday creative briefing",
+    "prompt": "Compile this week's 5 assets + 2 scroll-stops into a briefing doc. Tag for Notion Content Calendar (Social Media) and Paid Ads creative queue.",
+    "schedule": "0 16 * * 5",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "monday-weekly-review",
+    "name": "Monday weekly review",
+    "description": "Monday weekly review",
+    "prompt": "Run the weekly-report skill. Cover every active brand workspace under ~/.dev-houston/workspaces/. Send via Gmail and iMessage one-liner.",
+    "schedule": "0 8 * * 1",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "friday-audit",
+    "name": "Friday PPAIOS audit",
+    "description": "Friday PPAIOS audit",
+    "prompt": "Run the audit skill workspace-wide. Then run level-up on the top gap. Send Caner an iMessage with the headline finding.",
+    "schedule": "0 17 * * 5",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "daily-alerts-sweep",
+    "name": "Daily alerts sweep",
+    "description": "Daily alerts sweep",
+    "prompt": "Sweep alerts.jsonl across all brand workspaces. For any P1 alert opened in the last 24h that hasn't been acknowledged, iMessage Caner with the alert and the proposed action. Append your sweep to shared-ledger.jsonl.",
+    "schedule": "0 9 * * *",
+    "enabled": true,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "hey-clawd-poll",
+    "name": "Hey Clawd iMessage poll",
+    "description": "Hey Clawd iMessage poll",
+    "prompt": "Run the hey-clawd skill. Read the last 20 messages from +447922310915 via the iMessage MCP. For any 'Hey Clawd' message not yet followed by a 'Hey Caner' reply, parse the request, action it using whatever PPAIOS skills + Composio integrations apply, and reply via iMessage. If there are no new unactioned messages, output ROUTINE_OK and exit silently.",
+    "schedule": "*/15 * * * *",
+    "enabled": false,
+    "suppress_when_silent": true,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "caner-morning-brief",
+    "name": "Caner morning brief",
+    "description": "Caner morning brief",
+    "prompt": "Read overnight outputs across every agent in this workspace. Read alerts.jsonl. Read yesterday's kpi snapshot. Compose a one-screen iMessage to Caner: 3 wins, 3 risks, 3 recommended actions for today. Output ROUTINE_OK if no material change since yesterday.",
+    "schedule": "0 7 * * *",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  },
+  {
+    "id": "day30-phase-gate",
+    "name": "Day 30 phase gate review",
+    "description": "Day 30 phase gate review",
+    "prompt": "Compare 30 days of actuals against the 10x growth plan in GROWTH-PLAN-KIND2-10X.md. Flag bets that should be killed (>14 days no signal) and ones that should be doubled (>2x target). Email Caner the gate review and propose Phase 4 paid ads activation if email lever has held flow rev share ≥15%.",
+    "schedule": "0 18 30 * *",
+    "enabled": true,
+    "suppress_when_silent": false,
+    "created_at": "2026-05-07T15:00:00Z",
+    "updated_at": "2026-05-07T15:00:00Z"
+  }
+]

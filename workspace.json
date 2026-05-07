@@ -1,0 +1,12 @@
+{
+  "name": "PPAIOS — Youth & Earth",
+  "description": "Youth & Earth brand workspace. Tier: sprint. Anti-ageing supplement DTC. Y&E_private-api-key.txt found in Drive root (move to ~/.dev-houston/.env on first connect).",
+  "agents": [
+    "director",
+    "analytics",
+    "email-sms",
+    "content-seo",
+    "creative",
+    "social-media"
+  ]
+}

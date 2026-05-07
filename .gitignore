@@ -1,0 +1,7 @@
+.env
+.env.*
+.DS_Store
+node_modules/
+*.log
+.houston/kpi-snapshots/
+KILL_SWITCH

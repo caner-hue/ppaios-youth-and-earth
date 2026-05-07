@@ -1,0 +1,10 @@
+{
+  "brand": "youth-and-earth",
+  "tier": "sprint",
+  "inherits": "ppaios/references/policies.md",
+  "overrides": {
+    "customer_facing_send": "always_caner_approves_for_first_30_days",
+    "paid_ads_launch": "disabled",
+    "cross_workspace_read": "pp_director_only"
+  }
+}

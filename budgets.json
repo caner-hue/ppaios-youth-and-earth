@@ -1,0 +1,6 @@
+{
+  "brand": "youth-and-earth",
+  "tier": "sprint",
+  "daily_total_paid_cap_gbp": 0,
+  "notes": "Sprint + commission tiers: paid spend disabled by default. Caner explicitly enables when scope includes ads."
+}
