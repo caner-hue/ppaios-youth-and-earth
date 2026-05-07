@@ -22,15 +22,17 @@ TBC — Caner to confirm Shopify URL, Klaviyo account, ad platforms during onboa
 
 - **Status:** active ✅ (paid media currently running)
 - **Tier:** retainer + paid media management
-- **Started:** existing engagement (Notion page created 2026-04-13) — onboarded earlier
-- **Scope:** Paid media management (Meta primary). Status calls regular ("Youth & Earth x Growthcurve | Status Call" cadence)
-- **Invoicing:** Recurring; specific fee TBC ❓
-- **Stakeholders:**
-  - Client: Leyla, Matthew S
-  - Office: Huckletree West, Mediaworks, 191 Wood Lane, London W12 7FP
-  - Last invoice on file: **INV-2650, £3,250, due 28 Apr 2026** (gmail) ✅
+- **Registered billing entity:** **Empower3d Ltd** ✅
+- **Billing address:** Huckletree West, Mediaworks, 191 Wood Lane, London W12 7FP ✅
+- **Billing email:** **leyla@youthandearth.com** ✅
+- **Started:** existing engagement (Notion page created 2026-04-13)
+- **Scope:** Paid media management (Meta primary). Regular status calls ("Youth & Earth x Growthcurve | Status Call")
+- **Invoicing:**
+  - Last invoice: **INV-2650, £3,250, due 28 Apr 2026** ✅
+  - Tracked under instalment counter "Youth and Earth (Empower3d Ltd)" in `invoice_state.json`
+- **Stakeholders:** Leyla (primary), Matthew S
 - **Tools:**
-  - Meta Ad Account: `10153865868170051` ✅ (per `crm://youth-and-earth` 2026-05-06)
+  - Meta Ad Account: `10153865868170051` ✅
   - Y&E private API key file in Drive (`Y&E_private-api-key.txt`)
 - **Recent activity** (per `crm://`):
   - 2026-05-06: Meta billed £1,550 for 2-6 May window
